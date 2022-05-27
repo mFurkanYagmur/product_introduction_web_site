@@ -1,0 +1,25 @@
+<section class="new" id="new">
+        <div class="heading">
+            <span>YENİ KOLEKSİYON</span>
+            <h2>Yeni Ürünler</h2>
+        </div>
+        <!-- Content -->
+        <div class="new-container">
+            <!-- box1 -->
+             {{#each yeniUrunler}}
+            <div class="box">
+                <div class="box-img">
+                    <img src="{{image}}" alt="lila nevresim">
+                </div>
+                <div class="title-product">
+                    <h3>{{title}}</h3>
+                    <div class="stars">
+                        <span>{{rating}}/10</span>
+                        <i class='bx bxs-star'></i>                        
+                    </div>
+                </div>
+                <span>{{price}}₺</span>
+            </div>
+             {{/each}}
+        </div>
+    </section>
